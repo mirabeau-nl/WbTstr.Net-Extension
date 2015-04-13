@@ -7,8 +7,8 @@
     <ProjectGuid>{01EFB086-7E40-4B17-83AD-6DACD9711792}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>WbTstr.Net_Project_Template</RootNamespace>
-    <AssemblyName>WbTstr.Net Project Template</AssemblyName>
+    <RootNamespace>WbTstr_Net_Project_Template</RootNamespace>
+    <AssemblyName>WbTstr Net Project Template</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
@@ -34,21 +34,22 @@
   <ItemGroup>
     <Reference Include="FluentAutomation.Core, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\WbTstr.Net.SeleniumWebDriver.0.6.3.8\lib\FluentAutomation.Core.dll</HintPath>
+      <HintPath>..\packages\WbTstr.Net.SeleniumWebDriver.0.6.4.9\lib\FluentAutomation.Core.dll</HintPath>
     </Reference>
     <Reference Include="FluentAutomation.SeleniumWebDriver, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\WbTstr.Net.SeleniumWebDriver.0.6.3.8\lib\FluentAutomation.SeleniumWebDriver.dll</HintPath>
+      <HintPath>..\packages\WbTstr.Net.SeleniumWebDriver.0.6.4.9\lib\FluentAutomation.SeleniumWebDriver.dll</HintPath>
     </Reference>
-    <Reference Include="Newtonsoft.Json">
-      <HintPath>..\packages\WbTstr.Net.SeleniumWebDriver.0.6.3.8\lib\Newtonsoft.Json.dll</HintPath>
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\WbTstr.Net.SeleniumWebDriver.0.6.4.9\lib\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework, Version=2.6.4.14350, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\NUnit.2.6.4\lib\nunit.framework.dll</HintPath>
     </Reference>
-    <Reference Include="Polly">
-      <HintPath>..\packages\WbTstr.Net.SeleniumWebDriver.0.6.3.8\lib\Polly.dll</HintPath>
+    <Reference Include="Polly, Version=2.2.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\WbTstr.Net.SeleniumWebDriver.0.6.4.9\lib\Polly.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -60,16 +61,17 @@
     <Reference Include="System.Xml" />
     <Reference Include="WebDriver, Version=2.44.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\WbTstr.Net.SeleniumWebDriver.0.6.3.8\lib\WebDriver.dll</HintPath>
+      <HintPath>..\packages\WbTstr.Net.SeleniumWebDriver.0.6.4.9\lib\WebDriver.dll</HintPath>
     </Reference>
     <Reference Include="WebDriver.Support, Version=2.44.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\WbTstr.Net.SeleniumWebDriver.0.6.3.8\lib\WebDriver.Support.dll</HintPath>
+      <HintPath>..\packages\WbTstr.Net.SeleniumWebDriver.0.6.4.9\lib\WebDriver.Support.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Pages\BasePage.cs" />
     <Compile Include="Pages\SamplePage1.cs" />
+    <Compile Include="Tests\BaseTest.cs" />
     <Compile Include="Tests\Feature1\SampleTest1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TestData\Interfaces\SampleInterface1.cs" />

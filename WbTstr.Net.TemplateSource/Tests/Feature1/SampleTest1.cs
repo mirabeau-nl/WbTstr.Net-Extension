@@ -1,20 +1,10 @@
-﻿using FluentAutomation;
-using NUnit.Framework;
+﻿using NUnit.Framework;
 
-
-namespace WbTstr.Net_Project_Template.Tests.Feature1
+namespace WbTstr_Net_Project_Template.Tests.Feature1
 {
  
-    public class SampleTests : FluentTest
+    public class SampleTests : BaseTest
     {
-
-        [SetUp]
-        public void Init()
-        {
-        SeleniumWebDriver.Bootstrap(
-                SeleniumWebDriver.Browser.Chrome
-            );
-        }
 
 
         [TestCase]
