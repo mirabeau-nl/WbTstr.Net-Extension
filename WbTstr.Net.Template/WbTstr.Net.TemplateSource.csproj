@@ -7,7 +7,7 @@
     <ProjectGuid>{01EFB086-7E40-4B17-83AD-6DACD9711792}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>WbTstr.Net_Project_Template</RootNamespace>
+    <RootNamespace>$safeprojectname$</RootNamespace>
     <AssemblyName>WbTstr.Net Project Template</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
@@ -79,7 +79,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="TestData\Interfaces\acc.xml">
+    <Content Include="TestData\acc.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="TestData\dev.xml">

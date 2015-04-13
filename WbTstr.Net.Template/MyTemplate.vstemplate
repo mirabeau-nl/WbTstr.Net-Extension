@@ -1,0 +1,42 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>WbTstr.Net Project</Name>
+    <Description>&lt;No description available&gt;</Description>
+    <ProjectType>CSharp</ProjectType>
+    <ProjectSubType>Test</ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>WbTstr.Net Project</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <Icon>__TemplateIcon.ico</Icon>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="WbTstr.Net.TemplateSource.csproj" File="WbTstr.Net.TemplateSource.csproj" ReplaceParameters="true">
+      <ProjectItem ReplaceParameters="true" TargetFileName="App.config">App.config</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="packages.config">packages.config</ProjectItem>
+      <Folder Name="Pages" TargetFolderName="Pages">
+        <ProjectItem ReplaceParameters="true" TargetFileName="BasePage.cs">BasePage.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="SamplePage1.cs">SamplePage1.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Properties" TargetFolderName="Properties">
+        <ProjectItem ReplaceParameters="true" TargetFileName="AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
+      </Folder>
+      <Folder Name="TestData" TargetFolderName="TestData">
+        <ProjectItem ReplaceParameters="true" TargetFileName="acc.xml">acc.xml</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="dev.xml">dev.xml</ProjectItem>
+        <Folder Name="Interfaces" TargetFolderName="Interfaces">
+          <ProjectItem ReplaceParameters="true" TargetFileName="SampleInterface1.cs">SampleInterface1.cs</ProjectItem>
+        </Folder>
+        <ProjectItem ReplaceParameters="true" TargetFileName="prod.xml">prod.xml</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="test.xml">test.xml</ProjectItem>
+      </Folder>
+      <Folder Name="Tests" TargetFolderName="Tests">
+        <Folder Name="Feature1" TargetFolderName="Feature1">
+          <ProjectItem ReplaceParameters="true" TargetFileName="SampleTest1.cs">SampleTest1.cs</ProjectItem>
+        </Folder>
+      </Folder>
+    </Project>
+  </TemplateContent>
+</VSTemplate>

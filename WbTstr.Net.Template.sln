@@ -5,14 +5,14 @@ VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WbTstr.Net.Template", "WbTstr.Net.Template\WbTstr.Net.Template.csproj", "{BC84635F-E472-4314-8749-09EDF3037D56}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WbTstr.Net.TemplateSource", "..\..\..\..\..\..\dev\WbTstr.Net Template\WbTstr.Net.TemplateSource\WbTstr.Net.TemplateSource.csproj", "{01EFB086-7E40-4B17-83AD-6DACD9711792}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{CED4838D-1832-40E2-8E89-BA4713556947}"
 	ProjectSection(SolutionItems) = preProject
 		.nuget\NuGet.Config = .nuget\NuGet.Config
 		.nuget\NuGet.exe = .nuget\NuGet.exe
 		.nuget\NuGet.targets = .nuget\NuGet.targets
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WbTstr.Net.TemplateSource", "WbTstr.Net.TemplateSource\WbTstr.Net.TemplateSource.csproj", "{01EFB086-7E40-4B17-83AD-6DACD9711792}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

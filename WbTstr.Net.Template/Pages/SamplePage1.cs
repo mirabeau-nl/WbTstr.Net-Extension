@@ -1,6 +1,6 @@
 ﻿using FluentAutomation;
 
-namespace WbTstr.Net_Project_Template.Pages
+namespace $safeprojectname$.Pages
 {
     internal class SamplePage1 : PageObject<SamplePage1>
     {

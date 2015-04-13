@@ -2,7 +2,7 @@
 using NUnit.Framework;
 
 
-namespace WbTstr.Net_Project_Template.Tests.Feature1
+namespace $safeprojectname$.Tests.Feature1
 {
  
     public class SampleTests : FluentTest

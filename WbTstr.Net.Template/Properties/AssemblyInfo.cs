@@ -8,9 +8,9 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("WbTstr.Net.Template")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("Mirabeau")]
 [assembly: AssemblyProduct("WbTstr.Net.Template")]
-[assembly: AssemblyCopyright("")]
+[assembly: AssemblyCopyright("Mirabeau")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
