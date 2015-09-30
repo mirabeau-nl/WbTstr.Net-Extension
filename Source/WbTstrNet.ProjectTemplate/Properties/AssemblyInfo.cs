@@ -5,12 +5,12 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("WbTstr.Net Project Template")]
+[assembly: AssemblyTitle("WbTstrNet.ProjectTemplate")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Mirabeau")]
-[assembly: AssemblyProduct("WbTstr.Net Project Template")]
-[assembly: AssemblyCopyright("Copyright © Mirabeau 2014")]
+[assembly: AssemblyProduct("WbTstrNet.ProjectTemplate")]
+[assembly: AssemblyCopyright("Copyright © Mirabeau 2015")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("2fdfb7f5-4e3f-42c4-af52-6e7751234128")]
+[assembly: Guid("8afb91eb-28d8-49ec-afeb-5c6cf5dd93c7")]
 
 // Version information for an assembly consists of the following four values:
 //
