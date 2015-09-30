@@ -35,8 +35,8 @@
     <ProjectGuid>{BC84635F-E472-4314-8749-09EDF3037D56}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>WbTstr_Net_Template</RootNamespace>
-    <AssemblyName>WbTstr.Net Net Template</AssemblyName>
+    <RootNamespace>WbTstrNet.Extension</RootNamespace>
+    <AssemblyName>WbTstrNet.Extension</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <GeneratePkgDefFile>false</GeneratePkgDefFile>
     <IncludeAssemblyInVSIXContainer>false</IncludeAssemblyInVSIXContainer>
@@ -70,18 +70,19 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
-    <Content Include="ItemTemplates\WbTstr.Net PageObject.zip">
+    <Content Include="Packages\NUnit.2.6.4.nupkg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
-    <Content Include="ItemTemplates\WbTstr.Net Test File.zip">
+    <Content Include="Packages\WbTstr.Net.Core.1.2.0.20.nupkg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
-    <None Include="packages.config">
-      <SubType>Designer</SubType>
-    </None>
-    <Content Include="ProjectTemplates\WbTstrNet Project.zip">
+    <Content Include="Packages\WbTstr.Net.SeleniumWebDriver.1.2.0.20.nupkg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="WbTstrNet.Extension.ico">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
@@ -107,40 +108,30 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="ico.ico">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <IncludeInVSIX>true</IncludeInVSIX>
-    </Content>
-  </ItemGroup>
-  <ItemGroup>
-    <Reference Include="FluentAutomation.Core">
-      <HintPath>..\packages\WbTstr.Net.SeleniumWebDriver.0.6.4.9\lib\FluentAutomation.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="FluentAutomation.SeleniumWebDriver">
-      <HintPath>..\packages\WbTstr.Net.SeleniumWebDriver.0.6.4.9\lib\FluentAutomation.SeleniumWebDriver.dll</HintPath>
-    </Reference>
-    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <HintPath>..\packages\WbTstr.Net.SeleniumWebDriver.0.6.4.9\lib\Newtonsoft.Json.dll</HintPath>
-    </Reference>
-    <Reference Include="Polly">
-      <HintPath>..\packages\WbTstr.Net.SeleniumWebDriver.0.6.4.9\lib\Polly.dll</HintPath>
-    </Reference>
-    <Reference Include="WebDriver">
-      <HintPath>..\packages\WbTstr.Net.SeleniumWebDriver.0.6.4.9\lib\WebDriver.dll</HintPath>
-    </Reference>
-    <Reference Include="WebDriver.Support">
-      <HintPath>..\packages\WbTstr.Net.SeleniumWebDriver.0.6.4.9\lib\WebDriver.Support.dll</HintPath>
-    </Reference>
+    <ProjectReference Include="..\WbTstrNet.PageObjectTemplate\WbTstrNet.PageObjectTemplate.csproj">
+      <Project>{8A6844B0-877B-4799-A3CA-44D2E1B1919A}</Project>
+      <Name>WbTstrNet.PageObjectTemplate</Name>
+      <VSIXSubPath>ItemTemplates</VSIXSubPath>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <IncludeOutputGroupsInVSIX>TemplateProjectOutputGroup%3b</IncludeOutputGroupsInVSIX>
+    </ProjectReference>
+    <ProjectReference Include="..\WbTstrNet.ProjectTemplate\WbTstrNet.ProjectTemplate.csproj">
+      <Project>{643C0AA7-2AAE-436E-822E-29D19828E164}</Project>
+      <Name>WbTstrNet.ProjectTemplate</Name>
+      <VSIXSubPath>ProjectTemplates</VSIXSubPath>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <IncludeOutputGroupsInVSIX>TemplateProjectOutputGroup%3b</IncludeOutputGroupsInVSIX>
+    </ProjectReference>
+    <ProjectReference Include="..\WbTstrNet.TestTemplate\WbTstrNet.TestTemplate.csproj">
+      <Project>{BA391552-19CB-4C28-BF97-F875DEED8F9F}</Project>
+      <Name>WbTstrNet.TestTemplate</Name>
+      <VSIXSubPath>ItemTemplates</VSIXSubPath>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <IncludeOutputGroupsInVSIX>TemplateProjectOutputGroup%3b</IncludeOutputGroupsInVSIX>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(VSToolsPath)\VSSDK\Microsoft.VsSDK.targets" Condition="'$(VSToolsPath)' != ''" />
-  <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
-  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
-    <PropertyGroup>
-      <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
-    </PropertyGroup>
-    <Error Condition="!Exists('$(SolutionDir)\.nuget\NuGet.targets')" Text="$([System.String]::Format('$(ErrorText)', '$(SolutionDir)\.nuget\NuGet.targets'))" />
-  </Target>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
