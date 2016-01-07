@@ -86,6 +86,10 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
+    <Content Include="Packages\SpecFlow.1.9.0.nupkg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
     <None Include="source.extension.vsixmanifest">
       <SubType>Designer</SubType>
     </None>
@@ -118,6 +122,13 @@
     <ProjectReference Include="..\WbTstrNet.ProjectTemplate\WbTstrNet.ProjectTemplate.csproj">
       <Project>{643C0AA7-2AAE-436E-822E-29D19828E164}</Project>
       <Name>WbTstrNet.ProjectTemplate</Name>
+      <VSIXSubPath>ProjectTemplates</VSIXSubPath>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <IncludeOutputGroupsInVSIX>TemplateProjectOutputGroup%3b</IncludeOutputGroupsInVSIX>
+    </ProjectReference>
+    <ProjectReference Include="..\WbTstrNet.SpecFlowProjectTemplate\WbTstrNet.SpecFlowProjectTemplate.csproj">
+      <Project>{e495cf1c-ead1-4d57-a2f2-d8c020f9c189}</Project>
+      <Name>WbTstrNet.SpecFlowProjectTemplate</Name>
       <VSIXSubPath>ProjectTemplates</VSIXSubPath>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <IncludeOutputGroupsInVSIX>TemplateProjectOutputGroup%3b</IncludeOutputGroupsInVSIX>

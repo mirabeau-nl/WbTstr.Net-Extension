@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VSTemplate Version="3.0.0" Type="Project" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" xmlns:sdk="http://schemas.microsoft.com/developer/vstemplate-sdkextension/2010">
+  <TemplateData>
+    <Name>WbTstr.Net Project (SpecFlow)</Name>
+    <Description>A project template for WbTstr.Net with SpecFlow</Description>
+    <Icon>WbTstrNet.SpecFlowProjectTemplate.ico</Icon>
+    <ProjectType>CSharp</ProjectType>
+    <ProjectSubType>Test</ProjectSubType>
+    <RequiredFrameworkVersion>2.0</RequiredFrameworkVersion>
+    <SortOrder>1000</SortOrder>
+    <TemplateID>4d56e39d-c0cf-4cde-822c-85ab5ffb2012</TemplateID>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>WbTstrNet.IntegrationTests</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+  </TemplateData>
+  <TemplateContent>
+    <Project File="SpecFlowProjectTemplate.csproj" ReplaceParameters="true">
+      <ProjectItem ReplaceParameters="true" TargetFileName="Properties\AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="false" OpenInEditor="true">App.config</ProjectItem>
+
+      <!-- .\Pages -->
+      <ProjectItem ReplaceParameters="true" OpenInEditor="true">Pages\BasePage.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" OpenInEditor="true">Pages\Common\HomePage.cs</ProjectItem>
+      
+      <!-- .\Features -->
+      <ProjectItem ReplaceParameters="true" OpenInEditor="true">Features\SampleFeature.feature</ProjectItem>
+      
+      <!-- .\StepDefinitions -->
+      <ProjectItem ReplaceParameters="true" OpenInEditor="true">StepDefinitions\BaseStepDefinitions.cs</ProjectItem>
+    </Project>
+  </TemplateContent>
+  <WizardExtension>
+    <Assembly>NuGet.VisualStudio.Interop, Version=1.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</Assembly>
+    <FullClassName>NuGet.VisualStudio.TemplateWizard</FullClassName>
+  </WizardExtension>
+  <WizardData>
+    <packages repository="extension" repositoryId="Mirabeau.WebTstrNet.c21982d3-6b8c-49e1-ad57-338a3fd001cc">
+      <package id="NUnit" version ="2.6.4" />
+      <package id="WbTstr.Net.Core" version="1.2.0.20" />
+      <package id="WbTstr.Net.SeleniumWebDriver" version="1.2.0.20" />
+      <package id="SpecFlow" version="1.9.0" />
+    </packages>
+  </WizardData>
+</VSTemplate>
