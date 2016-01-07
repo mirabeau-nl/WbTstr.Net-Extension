@@ -10,20 +10,25 @@ namespace $safeprojectname$.Pages.Common
 {
     public class HomePage : BasePage<HomePage>
     {
-        private const string Navigation = "#nav";
-        private const string NavContactLink = "#nav > li:nth-child(4)";
+        private const string Header = ".main-header";
+        private const string LanguageToggle = ".language-selection > li";
+        private const string LanguageToggleLabel = ".language-selection > li > a";
 
         public HomePage(FluentTest test) : base(test)
         {
-            Url = "http://www.mirabeau.nl";
-            At = () => I.Assert.Visible(Navigation);
+            Url = "http://www.mirabeau.nl/nl-nl";
+            At = () => I.WaitUntil(() => I.Assert.Visible(Header));
         }
 
-        public HomePage ClickNavContactLink()
+        public void ClickLanguageToggle()
         {
-            I.Click(NavContactLink);
+            I.Click(LanguageToggle);
+        }
 
-            return this;
+        public string GetLanguageToggleLabel()
+        {
+            I.Wait(2);
+            return I.Find(LanguageToggleLabel).Element.Text;
         }
     }
 }

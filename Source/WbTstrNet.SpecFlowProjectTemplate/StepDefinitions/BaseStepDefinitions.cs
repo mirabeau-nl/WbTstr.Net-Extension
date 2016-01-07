@@ -10,7 +10,7 @@ using $safeprojectname$.Pages.Common;
 namespace $safeprojectname$.StepDefinitions
 {
     [Binding]
-    public sealed class BaseStepDefinition : FluentTest
+    public class BaseStepDefinition : FluentTest
     {
         public BaseStepDefinition()
         {

@@ -23,10 +23,11 @@
       <ProjectItem ReplaceParameters="true" OpenInEditor="true">Pages\Common\HomePage.cs</ProjectItem>
       
       <!-- .\Features -->
-      <ProjectItem ReplaceParameters="true" OpenInEditor="true">Features\SampleFeature.feature</ProjectItem>
-      
+      <ProjectItem ReplaceParameters="true" OpenInEditor="true">Features\Sample\SampleFeature.feature</ProjectItem>
+
       <!-- .\StepDefinitions -->
       <ProjectItem ReplaceParameters="true" OpenInEditor="true">StepDefinitions\BaseStepDefinitions.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" OpenInEditor="true">StepDefinitions\Sample\SampleFeatureSteps.cs</ProjectItem>
     </Project>
   </TemplateContent>
   <WizardExtension>
