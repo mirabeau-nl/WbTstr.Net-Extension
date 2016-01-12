@@ -32,7 +32,6 @@ obj/
 [Rr]elease*/
 Ankh.NoLoad
 *.svclog
-packages/
 
 #Tooling
 _ReSharper*/
