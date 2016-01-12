@@ -49,5 +49,3 @@ msbuild-by-convention/
 ~$*
 
 *~
-pvc-packages
-*.nupkg
